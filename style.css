@@ -1,0 +1,73 @@
+html {
+  height: 100%;
+  display: table;
+  margin: auto;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  color:rgb(187, 199, 220);
+  background-color: rgb(35, 35, 35);
+  vertical-align: middle;
+  display: table-cell;
+  height: 100%;
+}
+
+h1 {
+  margin: 0px 0px 25px 0px;
+}
+
+p {
+  margin: 0px 0px 15px 0px;
+}
+
+form * {
+  box-sizing: border-box;
+}
+
+.form.create {
+  padding: 30px;
+  border: 1px solid rgb(68, 68, 78);
+  border-radius: 4px;
+  background-color: rgb(47, 46, 48);
+}
+
+input {
+  font-size: 18px;
+  width: 400px;
+  padding: 10px;
+  margin: 20px 0px;
+  border-radius: 4px;
+}
+
+input:focus{
+  outline: none;
+}
+
+button.submit {
+  font-size: 22px;
+  width: 400px;
+  padding: 13px;
+  border-radius: 4px;
+  color: white;
+  background-color: rgb(124, 151, 219);
+}
+
+div {
+  position: relative;
+}
+
+img.success, img.error{
+  position: absolute;
+}
+
+img.success {
+  bottom:28%;
+  left:92%;
+}
+
+img.error {
+  bottom:42%;
+  left:92%;
+}
