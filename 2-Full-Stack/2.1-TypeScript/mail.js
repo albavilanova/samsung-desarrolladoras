@@ -6,6 +6,18 @@ var Mail = /** @class */ (function () {
         this.tipo = tipo;
         this.direccion = direccion;
     }
+    Mail.prototype.getTipo = function () {
+        return this.tipo;
+    };
+    Mail.prototype.setTipo = function (tipo) {
+        this.tipo = tipo;
+    };
+    Mail.prototype.getDireccion = function () {
+        return this.direccion;
+    };
+    Mail.prototype.setNumero = function (direccion) {
+        this.direccion = direccion;
+    };
     return Mail;
 }());
 exports.Mail = Mail;
