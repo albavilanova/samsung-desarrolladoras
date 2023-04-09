@@ -30,7 +30,7 @@ personas.forEach((persona, index) => {
     console.log("RESULTADO " + index)
     parametros.forEach((parametro) => {
         let obtenerParametro: string = "get" + parametro;
-        let resultado: string = JSON.stringify(persona[obtenerParametro]());
+        let resultado: string = JSON.stringify((persona as any)[obtenerParametro]());
         console.log(parametro + ": " + resultado);
     })
 });
