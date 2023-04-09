@@ -30,17 +30,17 @@ personas.forEach(function (persona) {
         console.log('El DNI ' + DNI + ' corresponde a ' + persona.nombre + ' ' + persona.apellidos);
         // Imprimir datos antes del cambio
         console.log('ANTES');
-        console.log('Dirección: ' + JSON.stringify(persona.direccion));
-        console.log('Teléfono: ' + JSON.stringify(persona.mail));
-        console.log('Mail: ' + JSON.stringify(persona.telefono));
+        console.log('Dirección: ' + JSON.stringify(persona.getDireccion()));
+        console.log('Teléfono: ' + JSON.stringify(persona.getMail()));
+        console.log('Mail: ' + JSON.stringify(persona.getTelefono()));
         // Cambiar datos
         persona.setDireccion([new direccion_js_1.Direccion('Calle Álamos', 38, 3, 'A', 29012, 'Málaga', 'Málaga')]);
         persona.setTelefono([new telefono_js_1.Telefono('Móvil', 621884320)]);
         persona.setMail([new mail_js_1.Mail('Personal', 'marta.gomez@outlook.com')]);
         // Imprimir datos después del cambio
         console.log('DESPUÉS');
-        console.log('Dirección: ' + JSON.stringify(persona.direccion));
-        console.log('Teléfono: ' + JSON.stringify(persona.mail));
-        console.log('Mail: ' + JSON.stringify(persona.telefono));
+        console.log('Dirección: ' + JSON.stringify(persona.getDireccion()));
+        console.log('Teléfono: ' + JSON.stringify(persona.getMail()));
+        console.log('Mail: ' + JSON.stringify(persona.getTelefono()));
     }
 });

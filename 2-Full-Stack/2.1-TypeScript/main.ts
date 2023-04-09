@@ -44,9 +44,9 @@ personas.forEach((persona) => {
 
         // Imprimir datos antes del cambio
         console.log('ANTES');
-        console.log('Dirección: ' + JSON.stringify(persona.direccion));
-        console.log('Teléfono: ' + JSON.stringify(persona.mail));
-        console.log('Mail: ' + JSON.stringify(persona.telefono));
+        console.log('Dirección: ' + JSON.stringify(persona.getDireccion()));
+        console.log('Teléfono: ' + JSON.stringify(persona.getMail()));
+        console.log('Mail: ' + JSON.stringify(persona.getTelefono()));
 
         // Cambiar datos
         persona.setDireccion([new Direccion('Calle Álamos', 38, 3, 'A', 29012, 'Málaga', 'Málaga')]);
@@ -55,9 +55,9 @@ personas.forEach((persona) => {
 
         // Imprimir datos después del cambio
         console.log('DESPUÉS');
-        console.log('Dirección: ' + JSON.stringify(persona.direccion));
-        console.log('Teléfono: ' + JSON.stringify(persona.mail));
-        console.log('Mail: ' + JSON.stringify(persona.telefono));
+        console.log('Dirección: ' + JSON.stringify(persona.getDireccion()));
+        console.log('Teléfono: ' + JSON.stringify(persona.getMail()));
+        console.log('Mail: ' + JSON.stringify(persona.getTelefono()));
     }
 });
 
