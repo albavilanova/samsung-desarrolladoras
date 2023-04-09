@@ -91,8 +91,7 @@ export class Persona {
     }
 
     public getDireccion(): Array<Direccion> {
-        return Object.values(this.direccion)
-        //return this.direccion;
+        return this.direccion;
     }
 
     public setDireccion(direccion: Array<Direccion>): void {

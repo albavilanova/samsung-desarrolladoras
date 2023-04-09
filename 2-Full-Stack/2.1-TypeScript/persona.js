@@ -58,8 +58,7 @@ var Persona = /** @class */ (function () {
         this.sexo = sexo;
     };
     Persona.prototype.getDireccion = function () {
-        return Object.values(this.direccion);
-        //return this.direccion;
+        return this.direccion;
     };
     Persona.prototype.setDireccion = function (direccion) {
         this.direccion = direccion;
