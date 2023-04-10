@@ -1,0 +1,62 @@
+{
+    "Mercadona": {
+        "Dirección": "Travessera de les Corts, 146, 08028 Barcelona",
+        "Geolocalización": {"Latitud": 41.381224, "Longitud": 2.126723, "URL": "https://goo.gl/maps/fxXzhbZidaKBMMzu5"},
+        "Productos": {"Tomate frito": {"Descripción": "Tomate frito con aceite de oliva",
+                                       "Marca": "Hacendado",
+                                       "Peso": 300,
+                                       "Unidad de medida": "gramos",
+                                       "Unidades": 1,
+                                       "Precio": {"Por unidad": 1.60, "Por kilo": 5.00},
+                                       "Oferta": {"Descripción": "Rebajado a 1.5€ por unidad",
+                                                  "Fecha límite": "28-04-2023"},
+                                       "URL": "https://tienda.mercadona.es/product/17131/tomate-frito-receta-artesana-hacendado-con-aceite-oliva-tarro"
+                                      },
+                      "Atún claro": {"Descripción": "Atún claro en aceite de girasol",
+                                     "Marca": "Hacendado",
+                                     "Peso": 60,
+                                     "Unidad de medida": "gramos",
+                                     "Unidades": 6,
+                                     "Precio": {"Por unidad": 0.75, "Por pack": 4.60, "Por kilo": 12.50},
+                                     "Oferta": {"Descripción": "Rebajado a 4.5€ por pack",
+                                                "Fecha límite": "28-04-2023"},
+                                     "URL": "https://tienda.mercadona.es/product/18055/atun-claro-aceite-girasol-hacendado-pack-6"
+                                    },
+                      "Plátano": {"Descripción": "Plátano de Canarias",
+                                  "Marca": null,
+                                  "Peso": 160,
+                                  "Unidad de medida": "gramos",
+                                  "Unidades": 1,
+                                  "Precio": {"Por unidad": 0.32, "Por kilo": 1.99},
+                                  "Oferta": null,
+                                  "URL": "https://tienda.mercadona.es/product/3819/platano-canarias-pieza"
+                                  }
+
+                     }
+    },
+    "La Sirena": {
+        "Dirección": "Ptge. de Senillosa, 2, 08034 Barcelona",
+        "Geolocalización": {"Latitud": 41.395631, "Longitud": 2.124727, "URL": "https://goo.gl/maps/LG6qbaAeS2Wvzhpy6"},
+        "Productos": {"Salmón": {"Descripción": "Lomos de salmón noruego Premium",
+                                 "Marca": "Hacendado",
+                                 "Peso": 125,
+                                 "Unidad de medida": "gramos",
+                                 "Unidades": 4,
+                                 "Precio": {"Por unidad": 4.50, "Por pack": 17.99, "Por kilo": 35.98},
+                                 "Oferta": {"Descripción": "Segunda unidad con un 20% de descuento",
+                                            "Fecha límite": "20-04-2023"},
+                                 "URL": "https://www.lasirena.es/es/pescado/11619-lomos-de-salmon-noruego-premium-8414532006553.html"
+                                },
+                     "Edamame": {"Descripción": "Edamame congelado",
+                                 "Marca": "Cocinas del mundo",
+                                 "Peso": 400,
+                                 "Unidad de medida": "gramos",
+                                 "Unidades": 1,
+                                 "Precio": {"Por unidad": 1.91, "Por kilo": 4.78},
+                                 "Oferta": {"Descripción": "28% del precio total por la compra de Pollo Teriyaki + Gyozas + Edamame.",
+                                            "Fecha límite": "31-05-2023"},
+                                 "URL": "https://www.lasirena.es/es/verdura/12062-edamame-8414532032309.html"
+                                }
+                     }
+    }
+}
