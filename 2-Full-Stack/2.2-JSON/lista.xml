@@ -1,102 +1,62 @@
 <?xml version="1.0" encoding="UTF-8" ?>
- <root>
-     <Mercadona>
-         <Dirección>Travessera de les Corts, 146, 08028 Barcelona</Dirección>
-         <Geolocalización>
-             <Latitud>41.381224</Latitud>
-             <Longitud>2.126723</Longitud>
-             <URL>https://goo.gl/maps/fxXzhbZidaKBMMzu5</URL>
-         </Geolocalización>
-         <Productos>
-             <Tomate frito>
-                 <Descripción>Tomate frito con aceite de oliva</Descripción>
-                 <Marca>Hacendado</Marca>
-                 <Peso>300</Peso>
-                 <Unidad de medida>gramos</Unidad de medida>
-                 <Unidades>1</Unidades>
-                 <Precio>
-                     <Por unidad>1.6</Por unidad>
-                     <Por kilo>5</Por kilo>
-                 </Precio>
-                 <Oferta>
-                     <Descripción>Rebajado a 1.5€ por unidad</Descripción>
-                     <Fecha límite>28-04-2023</Fecha límite>
-                 </Oferta>
-                 <URL>https://tienda.mercadona.es/product/17131/tomate-frito-receta-artesana-hacendado-con-aceite-oliva-tarro</URL>
-             </Tomate frito>
-             <Atún claro>
-                 <Descripción>Atún claro en aceite de girasol</Descripción>
-                 <Marca>Hacendado</Marca>
-                 <Peso>60</Peso>
-                 <Unidad de medida>gramos</Unidad de medida>
-                 <Unidades>6</Unidades>
-                 <Precio>
-                     <Por unidad>0.75</Por unidad>
-                     <Por pack>4.6</Por pack>
-                     <Por kilo>12.5</Por kilo>
-                 </Precio>
-                 <Oferta>
-                     <Descripción>Rebajado a 4.5€ por pack</Descripción>
-                     <Fecha límite>28-04-2023</Fecha límite>
-                 </Oferta>
-                 <URL>https://tienda.mercadona.es/product/18055/atun-claro-aceite-girasol-hacendado-pack-6</URL>
-             </Atún claro>
-             <Plátano>
-                 <Descripción>Plátano de Canarias</Descripción>
-                 <Marca></Marca>
-                 <Peso>160</Peso>
-                 <Unidad de medida>gramos</Unidad de medida>
-                 <Unidades>1</Unidades>
-                 <Precio>
-                     <Por unidad>0.32</Por unidad>
-                     <Por kilo>1.99</Por kilo>
-                 </Precio>
-                 <Oferta></Oferta>
-                 <URL>https://tienda.mercadona.es/product/3819/platano-canarias-pieza</URL>
-             </Plátano>
-         </Productos>
-     </Mercadona>
-     <La Sirena>
-         <Dirección>Ptge. de Senillosa, 2, 08034 Barcelona</Dirección>
-         <Geolocalización>
-             <Latitud>41.395631</Latitud>
-             <Longitud>2.124727</Longitud>
-             <URL>https://goo.gl/maps/LG6qbaAeS2Wvzhpy6</URL>
-         </Geolocalización>
-         <Productos>
-             <Salmón>
-                 <Descripción>Lomos de salmón noruego Premium</Descripción>
-                 <Marca>Hacendado</Marca>
-                 <Peso>125</Peso>
-                 <Unidad de medida>gramos</Unidad de medida>
-                 <Unidades>4</Unidades>
-                 <Precio>
-                     <Por unidad>4.5</Por unidad>
-                     <Por pack>17.99</Por pack>
-                     <Por kilo>35.98</Por kilo>
-                 </Precio>
-                 <Oferta>
-                     <Descripción>Segunda unidad con un 20% de descuento</Descripción>
-                     <Fecha límite>20-04-2023</Fecha límite>
-                 </Oferta>
-                 <URL>https://www.lasirena.es/es/pescado/11619-lomos-de-salmon-noruego-premium-8414532006553.html</URL>
-             </Salmón>
-             <Edamame>
-                 <Descripción>Edamame congelado</Descripción>
-                 <Marca>Cocinas del mundo</Marca>
-                 <Peso>400</Peso>
-                 <Unidad de medida>gramos</Unidad de medida>
-                 <Unidades>1</Unidades>
-                 <Precio>
-                     <Por unidad>1.91</Por unidad>
-                     <Por kilo>4.78</Por kilo>
-                 </Precio>
-                 <Oferta>
-                     <Descripción>28% del precio total por la compra de Pollo Teriyaki + Gyozas + Edamame.</Descripción>
-                     <Fecha límite>31-05-2023</Fecha límite>
-                 </Oferta>
-                 <URL>https://www.lasirena.es/es/verdura/12062-edamame-8414532032309.html</URL>
-             </Edamame>
-         </Productos>
-     </La Sirena>
- </root>
+<root>
+	<Mercadona>
+		<Dirección>Travessera de les Corts, 146, 08028 Barcelona</Dirección>
+		<Geolocalización>
+			<Latitud>41.381224</Latitud>
+			<Longitud>2.126723</Longitud>
+			<URL>https://goo.gl/maps/fxXzhbZidaKBMMzu5</URL>
+		</Geolocalización>
+		<Productos>
+			<Tomate frito>
+				<Descripción>Tomate frito con aceite de oliva</Descripción>
+				<Marca>Hacendado</Marca>
+				<Peso>300</Peso>
+				<Unidad de medida>gramos</Unidad de medida>
+				<Unidades>1</Unidades>
+				<Precio>
+					<Por unidad>1.6</Por unidad>
+					<Por kilo>5</Por kilo>
+				</Precio>
+				<Oferta>
+					<Descripción>Rebajado a 1.5€ por unidad</Descripción>
+					<Fecha límite>28-04-2023</Fecha límite>
+				</Oferta>
+				<URL>https://tienda.mercadona.es/product/17131/tomate-frito-receta-artesana-hacendado-con-aceite-oliva-tarro</URL>
+				<Adquirido>true</Adquirido>
+			</Tomate frito>
+			<Atún claro>
+				<Descripción>Atún claro en aceite de girasol</Descripción>
+				<Marca>Hacendado</Marca>
+				<Peso>60</Peso>
+				<Unidad de medida>gramos</Unidad de medida>
+				<Unidades>6</Unidades>
+				<Precio>
+					<Por unidad>0.75</Por unidad>
+					<Por pack>4.6</Por pack>
+					<Por kilo>12.5</Por kilo>
+				</Precio>
+				<Oferta>
+					<Descripción>Rebajado a 4.5€ por pack</Descripción>
+					<Fecha límite>28-04-2023</Fecha límite>
+				</Oferta>
+				<URL>https://tienda.mercadona.es/product/18055/atun-claro-aceite-girasol-hacendado-pack-6</URL>
+				<Adquirido>true</Adquirido>
+			</Atún claro>
+			<Plátano>
+				<Descripción>Plátano de Canarias</Descripción>
+				<Marca />
+				<Peso>160</Peso>
+				<Unidad de medida>gramos</Unidad de medida>
+				<Unidades>1</Unidades>
+				<Precio>
+					<Por unidad>0.32</Por unidad>
+					<Por kilo>1.99</Por kilo>
+				</Precio>
+				<Oferta />
+				<URL>https://tienda.mercadona.es/product/3819/platano-canarias-pieza</URL>
+				<Adquirido>false</Adquirido>
+			</Plátano>
+		</Productos>
+	</Mercadona>
+</root>

@@ -10,7 +10,8 @@
                                        "Precio": {"Por unidad": 1.60, "Por kilo": 5.00},
                                        "Oferta": {"Descripción": "Rebajado a 1.5€ por unidad",
                                                   "Fecha límite": "28-04-2023"},
-                                       "URL": "https://tienda.mercadona.es/product/17131/tomate-frito-receta-artesana-hacendado-con-aceite-oliva-tarro"
+                                       "URL": "https://tienda.mercadona.es/product/17131/tomate-frito-receta-artesana-hacendado-con-aceite-oliva-tarro",
+                                       "Adquirido": true
                                       },
                       "Atún claro": {"Descripción": "Atún claro en aceite de girasol",
                                      "Marca": "Hacendado",
@@ -20,7 +21,8 @@
                                      "Precio": {"Por unidad": 0.75, "Por pack": 4.60, "Por kilo": 12.50},
                                      "Oferta": {"Descripción": "Rebajado a 4.5€ por pack",
                                                 "Fecha límite": "28-04-2023"},
-                                     "URL": "https://tienda.mercadona.es/product/18055/atun-claro-aceite-girasol-hacendado-pack-6"
+                                     "URL": "https://tienda.mercadona.es/product/18055/atun-claro-aceite-girasol-hacendado-pack-6",
+                                     "Adquirido": true
                                     },
                       "Plátano": {"Descripción": "Plátano de Canarias",
                                   "Marca": null,
@@ -29,8 +31,9 @@
                                   "Unidades": 1,
                                   "Precio": {"Por unidad": 0.32, "Por kilo": 1.99},
                                   "Oferta": null,
-                                  "URL": "https://tienda.mercadona.es/product/3819/platano-canarias-pieza"
-                                  }
+                                  "URL": "https://tienda.mercadona.es/product/3819/platano-canarias-pieza",
+                                  "Adquirido": false
+                                }
 
                      }
     },
@@ -45,7 +48,8 @@
                                  "Precio": {"Por unidad": 4.50, "Por pack": 17.99, "Por kilo": 35.98},
                                  "Oferta": {"Descripción": "Segunda unidad con un 20% de descuento",
                                             "Fecha límite": "20-04-2023"},
-                                 "URL": "https://www.lasirena.es/es/pescado/11619-lomos-de-salmon-noruego-premium-8414532006553.html"
+                                 "URL": "https://www.lasirena.es/es/pescado/11619-lomos-de-salmon-noruego-premium-8414532006553.html",
+                                 "Adquirido": false
                                 },
                      "Edamame": {"Descripción": "Edamame congelado",
                                  "Marca": "Cocinas del mundo",
@@ -55,7 +59,8 @@
                                  "Precio": {"Por unidad": 1.91, "Por kilo": 4.78},
                                  "Oferta": {"Descripción": "28% del precio total por la compra de Pollo Teriyaki + Gyozas + Edamame.",
                                             "Fecha límite": "31-05-2023"},
-                                 "URL": "https://www.lasirena.es/es/verdura/12062-edamame-8414532032309.html"
+                                 "URL": "https://www.lasirena.es/es/verdura/12062-edamame-8414532032309.html",
+                                 "Adquirido": false
                                 }
                      }
     }
