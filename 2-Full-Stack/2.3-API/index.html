@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Samsung Desarrolladoras 2022/23 - Práctica 3</title>
+        <meta charset="utf-8" />
+        <script src="main.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+
+    <body>
+        <h1>REPRODUCTOR DE VÍDEO</h1>
+        <div id="select-button">
+            <input type="file" name="file" id="file" accept=".webm, .mp4, .ogv" style="display:none;" onchange="showVideo(event)">
+            <label for="file">Selecciona un archivo</label>
+        </div>
+        <video controls id="video"></video>
+        <div id="custom-controls">
+            <button id="play-button" onclick="document.getElementById('video').play();">Reproducir</button>
+            <button id="pause-button" onclick="document.getElementById('video').pause();">Pausar</button>
+            <button id="volume-down-button" onclick="document.getElementById('video').volume -= 0.1;">Bajar volumen</button>
+            <button id="volume-up-button" onclick="document.getElementById('video').volume += 0.1;">Subir volumen</button>
+        </div>
+        <div id="loader"></div>
+    </body>
+</html>
