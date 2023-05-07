@@ -99,18 +99,20 @@ function validation (){
 
     });
 
-    document.getElementById('submit-button').addEventListener("click", function(){
+    document.getElementById('submit-button').addEventListener("click", function(event){
 
         const all_elements = ["name", "first-surname", "second-surname", "email", "password", "confirm"]
         if ( all_elements.every(field => valid_elements.includes(field)) ) {
             alert("La inscripción se ha realizado con éxito.");
+            return true;
         }
         else {
-           alert("Algún campo no es correcto, por favor revíselos.");
+            alert("Uno o más campos no son válidos, por favor revíselos.");
+            event.preventDefault();
+            return false;
         }
     });
 
-    return valid_elements
 }
 
 window.onload = validation;

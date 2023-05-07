@@ -4,19 +4,15 @@ body {
     margin: 0;
 }
 
-p {
-    margin: 5px 0px;
-}
-
-/* Mobile */
-@media only screen and (max-width:740px) {
+/* Small screens */
+@media only screen and (max-width:1280px) {
     h1 {
         font-size: 20px;
     }
 }
 
 /* Big screens */
-@media screen and (min-width: 740px) { 
+@media screen and (min-width: 1280px) { 
     h1 {
         font-size: 24px;
     }
@@ -54,8 +50,8 @@ nav {
     color: rgb(7, 46, 162);
     }
 
-/* Mobile */
-@media only screen and (max-width:740px) {
+/* Small screens */
+@media only screen and (max-width:1280px) {
 
     .nav {
         flex-direction: column;
@@ -92,7 +88,7 @@ nav {
 }
 
 /* Big screens */
-@media screen and (min-width: 740px) { 
+@media screen and (min-width: 1280px) { 
 
     .nav {
         flex-direction: row;
@@ -138,7 +134,7 @@ nav {
     transform: translate(-50%, -50%);
     }
 
-#registration-button, #search-button {
+#registration-button, #about-button {
     color: white;
     background-color: rgb(7, 46, 162);
     border: 2px solid rgb(7, 46, 162);
@@ -149,8 +145,8 @@ nav {
     }
 
 /* Big screens */
-@media screen and (min-width: 740px) { 
-    #registration-button, #search-button {
+@media screen and (min-width: 1280px) { 
+    #registration-button, #about-button {
         padding: 20px 0px 40px 0px;
     }
 }
@@ -178,8 +174,38 @@ input:focus{
     padding: 15px 10px;
     }
 
-/* Mobile */
-@media only screen and (max-width:740px) {
+.form p {
+    font-size: 16px;
+    margin: 5px 0px 12px 0px;
+    }
+
+.registration-error {
+    color: red;
+    }
+
+.registration-success {
+    color: green;
+    }
+
+/* Small screens */
+@media only screen and (max-width:1280px) {
+
+    .registration-error, .registration-success {
+        padding: 10px;
+    }
+
+}
+
+/* Big screens */
+@media only screen and (min-width:1280px) {
+
+    .registration-error, .registration-success {
+        padding: 50px;
+    }
+}
+
+/* Small screens */
+@media only screen and (max-width:1280px) {
 
     .form {
         margin: 20px 20px;
@@ -204,7 +230,7 @@ input:focus{
 }
 
 /* Big screens */
-@media only screen and (min-width:740px) {
+@media only screen and (min-width:1280px) {
     
     .form {
         position: absolute;
@@ -231,4 +257,28 @@ input:focus{
         }
     }
 
-/* SEARCH PAGE */
+/* ABOUT PAGE */
+/* Small screens */
+@media only screen and (max-width:1280px) {
+
+    #description {
+        padding: 20px;
+    }
+    
+    p {
+        margin: 10px 0px;
+    }
+}
+
+/* Big screens */
+@media only screen and (min-width:1280px) {
+
+    #description {
+        padding: 30px 240px;
+    }
+
+    p {
+        margin: 10px 0px;
+    }
+
+}
