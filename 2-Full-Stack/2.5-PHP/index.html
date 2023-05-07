@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+
+    <head>
+        <title>Samsung Desarrolladoras 2022/23 - Práctica 5</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+    </head>
+
+    <body>
+        
+        <!-- FORMULARIO DE ALTA -->
+        <form class="form create" validate action="submit.php" method="POST">
+            <h1>Formulario de alta</h1>
+            <div class="name">
+                <label>Nombre
+                    <br>
+                    <input id="name" type="text" name="name" value="" pattern="[a-zA-Z ]+" required/>
+                    <br>
+                </label>
+            </div>
+            <div class="surname">
+                <label>Apellido
+                    <br>
+                    <input id="surname" type="text" name="surname" value="" pattern="[a-zA-Z ]+" required/>
+                    <br>
+                </label>
+            </div>
+            <div class="email">
+                <label>Email
+                    <br>
+                    <input id="email" type="email" name="email" value="" required/>
+                    <br>
+                </label>
+            </div>
+            <button class="submit" id="submit-button" type="submit" name="Enviar">ENVIAR</button>
+        </form>
+    </body>
+
+</html>

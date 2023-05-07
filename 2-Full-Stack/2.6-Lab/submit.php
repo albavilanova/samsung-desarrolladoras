@@ -77,8 +77,17 @@
 
                 if ($conn->query($sql_insert) === TRUE) {
                     echo '<div class="registration-success">';
-                    echo "Los datos de " . $name . " " . $first_surname . " " . $second_surname . " se han registrado con éxito.";
+                    echo "Los datos de " . $name . " " . $first_surname . " " . $second_surname . " se han registrado con éxito. ";
+                    echo "Será redirigido al formulario en 5 segundos.";
                     echo '</div>';
+                    header("refresh:5;url=registration.html" );
+                } else {
+                    echo '<div class="registration-error">';
+                    echo "No se han podido registrar los datos de " . $name . " " . $surname . ". ";
+                    echo "Será redirigido al formulario en 5 segundos.";
+                    echo '</div>';
+                    header("refresh:5;url=registration.html" );
+                    exit;
                 }
 
                 $conn->close();
