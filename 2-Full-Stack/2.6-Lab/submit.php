@@ -29,12 +29,8 @@
 
             if($_POST){
                 
-                $servername = "localhost";
-                $username = "root";
-                $password = "";
-                $dbname = "registro";
-
                 // Create connection
+                require_once("credentials.php");
                 $conn = new mysqli($servername, $username, $password, $dbname);
 
                 // Check connection
