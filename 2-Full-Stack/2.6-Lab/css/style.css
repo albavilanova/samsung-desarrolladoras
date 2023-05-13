@@ -134,7 +134,7 @@ nav {
     transform: translate(-50%, -50%);
     }
 
-#registration-button, #about-button {
+#registration-button, .search-button {
     color: white;
     background-color: rgb(7, 46, 162);
     border: 2px solid rgb(7, 46, 162);
@@ -146,7 +146,7 @@ nav {
 
 /* Big screens */
 @media screen and (min-width: 1280px) { 
-    #registration-button, #about-button {
+    #registration-button, .search-button {
         padding: 20px 0px 40px 0px;
     }
 }
@@ -174,7 +174,7 @@ input:focus{
     padding: 15px 10px;
     }
 
-.form p {
+#registration p {
     font-size: 16px;
     margin: 5px 0px 12px 0px;
     }
@@ -200,14 +200,20 @@ input:focus{
 @media only screen and (min-width:1280px) {
 
     .registration-error, .registration-success {
+        position: absolute;
         padding: 50px;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); 
     }
+
 }
 
 /* Small screens */
 @media only screen and (max-width:1280px) {
 
-    .form {
+    #registration {
         margin: 20px 20px;
     }
 
@@ -232,7 +238,7 @@ input:focus{
 /* Big screens */
 @media only screen and (min-width:1280px) {
     
-    .form {
+    #registration {
         position: absolute;
         padding: 0px 100px;
         top: 50%;
@@ -256,6 +262,45 @@ input:focus{
         font-size: 18px;
         }
     }
+
+
+/* SEARCH PAGE */
+/* Small screens */
+@media only screen and (max-width:1280px) {
+    #search {
+        padding: 20px 20px;
+    }
+}
+
+/* Big screens */
+@media only screen and (min-width:1280px) {
+    #search {
+        padding: 20px 240px;
+    }
+}
+
+#usuarios {
+    width: 100%;
+}
+
+#usuarios td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#usuarios tr:nth-child(even){
+    background-color: #f2f2f2;}
+
+#usuarios tr:hover {
+    background-color: #ddd;}
+
+#usuarios th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(7, 46, 162);
+    color: white;
+}
 
 /* ABOUT PAGE */
 /* Small screens */

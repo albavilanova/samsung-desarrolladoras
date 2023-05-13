@@ -19,6 +19,7 @@
             </div>
             <div class="right-items">
                 <a class="item selected" href="registration.html">REGISTRO</a>
+                <a class="item" href="search.php">CONSULTA</a>
                 <a class="item" href="about.html">ACERCA DE</a>
             </div>
             <a class="toggle" href="#" onclick="toggle();"><i class="fas fa-bars fa-2x"></i></a>
@@ -46,47 +47,64 @@
                 $first_surname = $_POST["first-surname"];
                 $second_surname = $_POST["second-surname"];
                 $email = $_POST["email"];
-                
-                // Check if user information already exists
-                $sql_complete_name_query = "SELECT * FROM USUARIOS WHERE NOMBRE='$name' AND PRIMER_APELLIDO='$first_surname'";
+
+                // Check if user has already registered
+                $sql_complete_name_query = "SELECT * FROM USUARIOS 
+                                            WHERE NOMBRE='$name' 
+                                            AND PRIMER_APELLIDO='$first_surname'
+                                            AND SEGUNDO_APELLIDO='$second_surname'";
                 $complete_name_duplicates = $conn->query($sql_complete_name_query);
                 if ($complete_name_duplicates->num_rows > 0) {
-                    echo '<div class="registration-error">';
-                    echo "Este nombre completo ya se encuentra registrado en nuestra base de datos. ";
+                    echo "<div class='registration-error'>";
+                    echo "ERROR: Este nombre completo ya se encuentra registrado en nuestra base de datos. ";
                     echo "Será redirigido al formulario en 5 segundos.";
-                    echo '</div>';
+                    echo "</div>";
                     header("refresh:5;url=registration.html" );
                     exit;
                 }
 
                 // Check if user e-mail already exists
-                $sql_email_query = "SELECT * FROM USUARIOS WHERE EMAIL='$email'";
+                $sql_email_query = "SELECT * FROM USUARIOS 
+                                    WHERE EMAIL='$email'";
                 $email_duplicates = $conn->query($sql_email_query);
                 if ($email_duplicates->num_rows > 0) {
-                    echo '<div class="registration-error">';
-                    echo "Este e-mail ya se encuentra registrado en nuestra base de datos. ";
+                    echo "<div class='registration-error'>";
+                    echo "ERROR: Este e-mail ya se encuentra registrado en nuestra base de datos. ";
                     echo "Será redirigido al formulario en 5 segundos.";
-                    echo '</div>';
+                    echo "</div>";
                     header("refresh:5;url=registration.html" );
                     exit;
                 }
 
                 // Insert data into DB
-                $sql_insert = "INSERT INTO USUARIOS (NOMBRE, PRIMER_APELLIDO, SEGUNDO_APELLIDO, EMAIL) 
-                            VALUES ('$name', '$first_surname', '$second_surname', '$email')";
+                try {
+                    $sql_insert = "INSERT INTO USUARIOS (NOMBRE, PRIMER_APELLIDO, SEGUNDO_APELLIDO, EMAIL) 
+                                   VALUES ('$name', '$first_surname', '$second_surname', '$email')";
 
-                if ($conn->query($sql_insert) === TRUE) {
-                    echo '<div class="registration-success">';
-                    echo "Los datos de " . $name . " " . $first_surname . " " . $second_surname . " se han registrado con éxito. ";
-                    echo "Será redirigido al formulario en 5 segundos.";
-                    echo '</div>';
-                    header("refresh:5;url=registration.html" );
-                } else {
-                    echo '<div class="registration-error">';
-                    echo "No se han podido registrar los datos de " . $name . " " . $surname . ". ";
-                    echo "Será redirigido al formulario en 5 segundos.";
-                    echo '</div>';
-                    header("refresh:5;url=registration.html" );
+                    // Successful insert
+                    if ($conn->query($sql_insert) === TRUE) {
+                        echo "<div class='registration-success'>";
+                        echo "Registro completado con éxito.";
+                        echo '<div><input class="search-button" type="button" value="CONSULTA" onclick="location.href=\'search.php\'"></div>';
+                        echo "</div>";
+                    } 
+                } catch (mysqli_sql_exception $e) {
+                    // Show error in Spanish if variable exceeds the maximum number of characters (30)
+                    if (str_contains($e, "Data too long for column")) {
+                        $long_var = explode(" ", $e)[6];
+                        echo "<div class='registration-error'>";
+                        echo "ERROR: Se ha sobrepasado el número máximo de carácteres (30) en el campo " . $long_var . ". ";
+                        echo "Será redirigido al formulario en 5 segundos.";
+                        echo "</div>";
+                        header("refresh:5;url=registration.html" );
+                    
+                    // Show other errors
+                    } else {
+                        echo "<div class='registration-error'>";
+                        echo "No se han podido registrar los datos. ";
+                        echo "ERROR: " . $e;
+                        echo "</div>";
+                    }
                     exit;
                 }
 
