@@ -6,7 +6,6 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <script src="js/index.js" defer></script>
-        <script src="js/validation.js" defer></script>
         <script src="https://kit.fontawesome.com/b37653d681.js"></script>
         <link rel="stylesheet" type="text/css" href="css/style.css" />
     </head>

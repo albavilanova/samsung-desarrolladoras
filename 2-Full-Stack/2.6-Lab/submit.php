@@ -2,7 +2,7 @@
 <html>
 
     <head>
-        <title>Samsung Desarrolladoras 2022/23 - Laboratorio 3</title>
+        <title>Samsung Desarrolladoras 2022/23 - Registro</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <script src="js/index.js" defer></script>
