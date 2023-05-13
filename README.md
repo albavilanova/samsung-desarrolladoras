@@ -9,4 +9,4 @@
 <h2>Full-stack exercise</h2>
 <p>Here we can see the result from the final exercise of the third phase of the program, where a registration form can store the received data to a database.</p>
 
-https://user-images.githubusercontent.com/56304139/236687789-ac1c6ebf-d9ca-4243-8b7f-ddd8684715c1.mp4
+https://github.com/albavilanova/samsung-desarrolladoras/assets/56304139/ec7ce5d4-4f29-4dfd-9d94-f2bccd1ba75b
