@@ -29,16 +29,10 @@
         <div id="search">  
             <h1>Consulta de registros</h1>
             <?php
+                // Connect to DB
+                require_once("functions.php");
+                $conn = connect_to_db();
 
-                // Create connection
-                require_once("credentials.php");
-                $conn = new mysqli($servername, $username, $password, $dbname);
-                
-                // Check connection
-                if ($conn->connect_error) {
-                    die("No es posible conectarse a la base de datos: " . $conn->connect_error);
-                }
-                
                 $search_query = "SELECT * FROM USUARIOS"; 
                 $result = $conn->query($search_query);
                 

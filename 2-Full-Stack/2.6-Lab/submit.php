@@ -29,14 +29,9 @@
 
             if($_POST){
                 
-                // Create connection
-                require_once("credentials.php");
-                $conn = new mysqli($servername, $username, $password, $dbname);
-
-                // Check connection
-                if ($conn->connect_error) {
-                    die("No es posible conectarse a la base de datos: " . $conn->connect_error);
-                }
+                // Connect to DB
+                require_once("functions.php");
+                $conn = connect_to_db();
 
                 // Get data from form
                 $name = $_POST["name"];
