@@ -34,10 +34,10 @@
                 $conn = connect_to_db();
 
                 // Get data from form
-                $name = $_POST["name"];
-                $first_surname = $_POST["first-surname"];
-                $second_surname = $_POST["second-surname"];
-                $email = $_POST["email"];
+                $name = trim($_POST["name"]);
+                $first_surname = trim($_POST["first-surname"]);
+                $second_surname = trim($_POST["second-surname"]);
+                $email = trim($_POST["email"]);
 
                 // Check if user has already registered
                 $sql_complete_name_query = "SELECT * FROM USUARIOS 
